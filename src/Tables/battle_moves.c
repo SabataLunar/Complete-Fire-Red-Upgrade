@@ -11958,6 +11958,22 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
+		[MOVE_RESOURCEMAN] =
+	{	//ANIM TODO
+		.effect = EFFECT_RESOURCE_MAN,
+		.power = 100, //PLACEHOLDER DATA
+		.type = TYPE_FIRE,
+		.accuracy = 100,
+		.pp = 20,
+		.secondaryEffectChance = 0,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 200,
+		.split = SPLIT_SPECIAL,
+		.z_move_effect = 0
+	},
+
 	[MOVE_BREAKNECK_BLITZ_P] =
 	{
 		.effect = EFFECT_HIT,
@@ -14952,5 +14968,6 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
 	[MOVE_FIERYWRATH] = 100,
 	[MOVE_THUNDERCAGE] = 100,
 	[MOVE_DRAGONENERGY] = 100,
+	[MOVE_RESOURCEMAN] = 144,
 };
 #endif

@@ -777,6 +777,7 @@ gMoveAnimations:
 .word ANIM_FIERY_WRATH
 .word ANIM_THUNDER_CAGE
 .word ANIM_DRAGON_ENERGY
+.word ANIM_RESOURCE_MAN
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_ALL_OUT_PUMMELING
@@ -17166,6 +17167,12 @@ ANIM_THUNDER_CAGE:
 .pool
 ANIM_DRAGON_ENERGY:
 	goto ANIM_DRAGONPULSE
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_RESOURCE_MAN:
+	goto 0x81cbb43	@MOVE_SUPERPOWER
 	endanimation
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

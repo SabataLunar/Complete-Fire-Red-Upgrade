@@ -5309,8 +5309,19 @@ BS_245_Blank:
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-.global BS_246_Blank
-BS_246_Blank:
+.global BS_246__ResourceMan
+	jumpifstat BANK_ATTACKER EQUALS STAT_ATK STAT_MIN FAILED_PRE
+	attackstring
+	ppreduce
+	attackanimation
+	waitanimation
+	setgraphicalstatchangevalues
+	playstatchangeanimation BANK_ATTACKER, STAT_ANIM_ATK, STAT_ANIM_DOWN | STAT_ANIM_IGNORE_ABILITIES | STAT_ANIM_BY_TWO
+	setstatchanger STAT_ATK | DECREASE_2
+	statbuffchange STAT_ATTACKER | STAT_BS_PTR | STAT_CERTAIN BS_STANDARD_HIT
+	jumpifbyte EQUALS MULTISTRING_CHOOSER 0x2 BS_STANDARD_HIT
+	setgraphicalstatchangevalue
+	waitmessage DELAY_1SECOND
 	goto BS_STANDARD_HIT
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
