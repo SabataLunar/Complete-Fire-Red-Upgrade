@@ -5309,7 +5309,8 @@ BS_245_Blank:
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-.global BS_246__ResourceMan
+.global BS_246_ResourceMan
+BS_246_ResourceMan:
 	jumpifstat BANK_ATTACKER EQUALS STAT_ATK STAT_MIN FAILED_PRE
 	attackstring
 	ppreduce
