@@ -5321,7 +5321,7 @@ BS_246_ResourceMan:
 	setstatchanger STAT_ATK | DECREASE_2
 	statbuffchange STAT_ATTACKER | STAT_BS_PTR | STAT_CERTAIN BS_STANDARD_HIT
 	jumpifbyte EQUALS MULTISTRING_CHOOSER 0x2 BS_STANDARD_HIT
-	setgraphicalstatchangevalue
+	setgraphicalstatchangevalues
 	waitmessage DELAY_1SECOND
 	goto BS_STANDARD_HIT
 
