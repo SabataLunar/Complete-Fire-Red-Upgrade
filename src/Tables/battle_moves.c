@@ -11958,7 +11958,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-		[MOVE_RESOURCEMAN] =
+		[MOVE_RESOURCE_MAN] =
 	{	//ANIM TODO
 		.effect = EFFECT_RESOURCE_MAN,
 		.power = 100, //PLACEHOLDER DATA
@@ -14968,6 +14968,6 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
 	[MOVE_FIERYWRATH] = 100,
 	[MOVE_THUNDERCAGE] = 100,
 	[MOVE_DRAGONENERGY] = 100,
-	[MOVE_RESOURCEMAN] = 144,
+	[MOVE_RESOURCE_MAN] = 144,
 };
 #endif
