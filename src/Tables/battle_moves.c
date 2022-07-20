@@ -11961,7 +11961,7 @@ const struct BattleMove gBattleMoves[] =
 		[MOVE_RESOURCE_MAN] =
 	{	//ANIM TODO
 		.effect = EFFECT_RESOURCE_MAN,
-		.power = 100, //PLACEHOLDER DATA
+		.power = 125, //PLACEHOLDER DATA
 		.type = TYPE_FIRE,
 		.accuracy = 100,
 		.pp = 20,
